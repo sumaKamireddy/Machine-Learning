@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec  1 20:28:53 2021
+
+@author: suma
+"""
+
+Business Objective & Constraints created by me :
+ 
+. The Objective of this Hackathon is to identify the potential Defaulters 
+. No strict Latency Constraints 
+. Interpretability of the model would be helpful
+. Log loss is used as metric (so output to be submitted should be probability value)
+. In real world misclassification is a problem - If a person is not capable is identified as capable the bank or financial institution runs into delinquencies and may suffer losses,while if a capable person is classifed wring bank suffers in profits
+
+Problem Statements:
+
+The data identified has both categorical/numerical features with target column as 1/0 1 being Defaulters So it is a Binary Classification Problem
+
+EDA  observations:
+
+1. Dataset is highly imalanced Defaulters is 9%
+2. remove ID col since it has no significance 
+3. Remove Payment plan
+4. Do preprocessing onLoan Title
+5. Remove Accounts Delinquent since there is only 1 value
+6. Outliers - Most of them have ouluiter. These feilds in particular have more Outliers(wide range)  Open Account, Revolving Balance, Total Accounts,Total Recieved Interest, Total Recieved Late Fee, Recoveries,Colleciton Recovery Fee, Total Collection Amount, Total Current Balance , Total Revolving Credit Facitity,Home Ownership  - 11 feilds too many ?
+PreProcessing Steps:
+7. no Null data 
+Performace metrics on Train Data and test Data for Different models:
+
+
+
+
+
+
+
